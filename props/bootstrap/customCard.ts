@@ -1,6 +1,6 @@
 import type { PropType } from "vue";
 
-export const customCard = {
+export const customCardProps = {
     id: { type: String as PropType<string>, default: '' },
     title: { type: String as PropType<string>, required: true },
     subTitle: { type: String as PropType<string>, default: '' },

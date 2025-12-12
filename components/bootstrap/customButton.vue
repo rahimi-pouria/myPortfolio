@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import {customButtonProps} from "@/props/bootstrap/customButton";
+import { customButtonProps } from "@/props/bootstrap/customButton";
 import { BButton } from 'bootstrap-vue-next'
 
 const props = defineProps(customButtonProps)

@@ -18,6 +18,8 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/pages/runtime/plugins/check-if-page-unused.js")> &
   InjectionType<typeof import("../../node_modules/.pnpm/@nuxt+devtools@2.6.5_vite@7_e839dd4405d33c9495c5576b257e6a4f/node_modules/@nuxt/devtools/dist/runtime/plugins/devtools.server.js")> &
   InjectionType<typeof import("../../node_modules/.pnpm/@nuxt+devtools@2.6.5_vite@7_e839dd4405d33c9495c5576b257e6a4f/node_modules/@nuxt/devtools/dist/runtime/plugins/devtools.client.js")> &
+  InjectionType<typeof import("../../node_modules/.pnpm/@bootstrap-vue-next+nuxt@0._2ef4b4ede75b405ba4da68985f59587c/node_modules/@bootstrap-vue-next/nuxt/dist/runtime/useDirectives.js")> &
+  InjectionType<typeof import("../../node_modules/.pnpm/@bootstrap-vue-next+nuxt@0._2ef4b4ede75b405ba4da68985f59587c/node_modules/@bootstrap-vue-next/nuxt/dist/runtime/createBootstrap.js")> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/plugins/dev-server-logs.js")> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/plugins/warn.dev.server.js")> &
   InjectionType<typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/plugins/check-if-layout-used.js")> &

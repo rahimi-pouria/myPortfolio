@@ -647,7 +647,19 @@ const _inlineRuntimeConfig = {
       }
     }
   },
-  "public": {}
+  "public": {
+    "bootstrapVueNext": {
+      "directives": [
+        "vBColorMode",
+        "vBModal",
+        "vBPopover",
+        "vBScrollspy",
+        "vBToggle",
+        "vBTooltip"
+      ],
+      "plugin": {}
+    }
+  }
 };
 const envOptions = {
   prefix: "NITRO_",

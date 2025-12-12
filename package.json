@@ -10,11 +10,14 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
+    "@bootstrap-vue-next/nuxt": "^0.40.9",
     "@mdi/font": "^7.4.47",
     "@nuxt/image": "^1.0.0-rc.1",
     "@types/node": "^18",
     "@types/vuelidate": "^0.7.22",
     "axios": "^1.12.2",
+    "bootstrap": "^5.3.8",
+    "bootstrap-vue-next": "^0.40.9",
     "eslint": "^9.35.0",
     "nuxt": "^3.19.2",
     "pug": "^3.0.2",
@@ -24,12 +27,15 @@
     "sass-loader": "^10.4.1",
     "sweetalert2": "^11.23.0",
     "typescript": "^5.9.2",
-    "vue-i18n": "^9.14.5",
-    "vue": "^3.5.21"
-
+    "vue": "^3.5.21",
+    "vue-i18n": "^9.14.5"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.1.0",
     "@vuelidate/core": "^2.0.3",
-    "@vuelidate/validators": "^2.0.4"
+    "@vuelidate/validators": "^2.0.4",
+    "canvas-snow": "^0.2.1",
+    "magic-snowflakes": "^7.0.2",
+    "pure-snow.js": "^2.1.0"
   }
 }

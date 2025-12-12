@@ -8,13 +8,28 @@ importers:
 
   .:
     dependencies:
+      '@fortawesome/fontawesome-free':
+        specifier: ^7.1.0
+        version: 7.1.0
       '@vuelidate/core':
         specifier: ^2.0.3
         version: 2.0.3(vue@3.5.22(typescript@5.9.3))
       '@vuelidate/validators':
         specifier: ^2.0.4
         version: 2.0.4(vue@3.5.22(typescript@5.9.3))
+      canvas-snow:
+        specifier: ^0.2.1
+        version: 0.2.1
+      magic-snowflakes:
+        specifier: ^7.0.2
+        version: 7.0.2
+      pure-snow.js:
+        specifier: ^2.1.0
+        version: 2.1.0
     devDependencies:
+      '@bootstrap-vue-next/nuxt':
+        specifier: ^0.40.9
+        version: 0.40.9(bootstrap-vue-next@0.40.9(vue-router@4.5.1(vue@3.5.22(typescript@5.9.3)))(vue@3.5.22(typescript@5.9.3)))(magicast@0.3.5)
       '@mdi/font':
         specifier: ^7.4.47
         version: 7.4.47
@@ -30,6 +45,12 @@ importers:
       axios:
         specifier: ^1.12.2
         version: 1.12.2
+      bootstrap:
+        specifier: ^5.3.8
+        version: 5.3.8(@popperjs/core@2.11.8)
+      bootstrap-vue-next:
+        specifier: ^0.40.9
+        version: 0.40.9(vue-router@4.5.1(vue@3.5.22(typescript@5.9.3)))(vue@3.5.22(typescript@5.9.3))
       eslint:
         specifier: ^9.35.0
         version: 9.36.0(jiti@2.6.1)
@@ -182,6 +203,11 @@ packages:
   '@babel/types@7.28.4':
     resolution: {integrity: sha512-bkFqkLhh3pMBUQQkpVgWDWq/lqzc2678eUyDlTBhRqhCHFguYYGM0Efga7tYk4TogG/3x0EEl66/OQ+WGbWB/Q==}
     engines: {node: '>=6.9.0'}
+
+  '@bootstrap-vue-next/nuxt@0.40.9':
+    resolution: {integrity: sha512-gHR8DRy9GNt92qoJ3ZA8CuyBEarMTjO4R4+9NijW1a8OqHS8d0dC07BTwV3PFitaH8uXSvpfaSfrSVQw4gmXLA==}
+    peerDependencies:
+      bootstrap-vue-next: ^0.40.9
 
   '@cloudflare/kv-asset-handler@0.4.0':
     resolution: {integrity: sha512-+tv3z+SPp+gqTIcImN9o0hqE9xyfQjI1XD9pL6NuKjua9B1y7mNYv0S9cP+QEbA4ppVgGZEmKOvHX5G5Ei1CVA==}
@@ -393,6 +419,10 @@ packages:
   '@fastify/accept-negotiator@1.1.0':
     resolution: {integrity: sha512-OIHZrb2ImZ7XG85HXOONLcJWGosv7sIvM2ifAPQVhg9Lv7qdmMBNVaai4QTdyuaqbKM5eO6sLSQOYI7wEQeCJQ==}
     engines: {node: '>=14'}
+
+  '@fortawesome/fontawesome-free@7.1.0':
+    resolution: {integrity: sha512-+WxNld5ZCJHvPQCr/GnzCTVREyStrAJjisUPtUxG5ngDA8TMlPnKp6dddlTpai4+1GNmltAeuk1hJEkBohwZYA==}
+    engines: {node: '>=6'}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -891,6 +921,9 @@ packages:
 
   '@polka/url@1.0.0-next.29':
     resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
+
+  '@popperjs/core@2.11.8':
+    resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
 
   '@poppinss/colors@4.1.5':
     resolution: {integrity: sha512-FvdDqtcRCtz6hThExcFOgW0cWX+xwSMWcRuQe5ZEb2m7cVQOAVZOIMt+/v9RxGiD9/OY16qJBXK4CVKWAPalBw==}
@@ -1440,6 +1473,10 @@ packages:
     peerDependencies:
       postcss: ^8.1.0
 
+  awesome-js-funcs@0.1.7:
+    resolution: {integrity: sha512-paSUMkk2+YSXdnoKW65AjrrN3kkEbaJRCCgOLvEHsIxFMmccyOwAr+9TMHM9O5WvZrB15rPQ6dlV/P1zyxXFBw==}
+    deprecated: This package has been migrated to @cycjimmy/awesome-js-funcs for scoped NPM package. Please switch to @cycjimmy/awesome-js-funcs to stay up to date.
+
   axios@1.12.2:
     resolution: {integrity: sha512-vMJzPewAlRyOgxV2dU0Cuz2O8zzzx9VYtbJOaBgXFeLc4IV/Eg50n4LowmehOOR61S8ZMpc2K5Sa7g6A4jfkUw==}
 
@@ -1513,6 +1550,26 @@ packages:
   boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
 
+  bootstrap-vue-next@0.40.9:
+    resolution: {integrity: sha512-m4EODlKWIkCFiQzICmKpOTjl3mxqKIpIbsBX0liFsMUip7huZkHDmaZUm6PrqJM2PHrZ7n8l6YRUgBPzFKUcYg==}
+    peerDependencies:
+      '@floating-ui/vue': '*'
+      '@vueuse/core': '*'
+      vue: ^3.5.13
+      vue-router: '*'
+    peerDependenciesMeta:
+      '@floating-ui/vue':
+        optional: true
+      '@vueuse/core':
+        optional: true
+      vue-router:
+        optional: true
+
+  bootstrap@5.3.8:
+    resolution: {integrity: sha512-HP1SZDqaLDPwsNiqRqi5NcP0SSXciX2s9E+RyqJIIqGo+vJeN5AJVM98CXmW/Wux0nQ5L7jeWUdplCEf0Ee+tg==}
+    peerDependencies:
+      '@popperjs/core': ^2.11.8
+
   brace-expansion@1.1.12:
     resolution: {integrity: sha512-9T9UjW3r0UW5c1Q7GTwllptXwhvYmEzFhzMfZ9H7FQWt+uZePjZPjBP/W1ZEyZ1twGWom5/56TF4lPcqjnDHcg==}
 
@@ -1574,6 +1631,10 @@ packages:
 
   caniuse-lite@1.0.30001746:
     resolution: {integrity: sha512-eA7Ys/DGw+pnkWWSE/id29f2IcPHVoE8wxtvE5JdvD2V28VTDPy1yEeo11Guz0sJ4ZeGRcm3uaTcAqK1LXaphA==}
+
+  canvas-snow@0.2.1:
+    resolution: {integrity: sha512-OQEuPcO56UCWcOzxsWCjbiloLXEW+tP7G5NnWYwLU0Wh5LT3YPegstp7L4W6JNiLOoDUbrvwsdiDK9+TOTOVnA==}
+    deprecated: This package has been migrated to @cycjimmy/canvas-snow for scoped NPM package. Please switch to @cycjimmy/canvas-snow to stay up to date.
 
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -2626,6 +2687,10 @@ packages:
   magic-regexp@0.10.0:
     resolution: {integrity: sha512-Uly1Bu4lO1hwHUW0CQeSWuRtzCMNO00CmXtS8N6fyvB3B979GOEEeAkiTUDsmbYLAbvpUS/Kt5c4ibosAzVyVg==}
 
+  magic-snowflakes@7.0.2:
+    resolution: {integrity: sha512-hpoaXHPu2YYQT7tZK3/x4BgHmfYBoCN8+E9BbJKiDKe78nGEqYA3Sk5T2fK1SGcavKHPeBxXJgE8oaEExxeqrg==}
+    engines: {node: '>=10'}
+
   magic-string-ast@1.0.2:
     resolution: {integrity: sha512-8ngQgLhcT0t3YBdn9CGkZqCYlvwW9pm7aWJwd7AxseVWf1RU8ZHCQvG1mt3N5vvUme+pXTcHB8G/7fE666U8Vw==}
     engines: {node: '>=20.18.0'}
@@ -3244,6 +3309,9 @@ packages:
   punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
+
+  pure-snow.js@2.1.0:
+    resolution: {integrity: sha512-+nucAfvxnOp+p2VdQRYJkATcz/d/f7txgxzU0ybb1po5XzLzQpwxOiz6PfdzwQCPLOMBOQ8Lx1OZVon8xB8vaQ==}
 
   push-dir@0.4.1:
     resolution: {integrity: sha512-Nrrsly0c3kCfu725Jnif/s5adHpBwKCGWBttHVxTndF4iyGBSFtNi/pduFxHF5ks0kWtHcbA3XXP5MEra6iiCA==}
@@ -4257,6 +4325,13 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
+  '@bootstrap-vue-next/nuxt@0.40.9(bootstrap-vue-next@0.40.9(vue-router@4.5.1(vue@3.5.22(typescript@5.9.3)))(vue@3.5.22(typescript@5.9.3)))(magicast@0.3.5)':
+    dependencies:
+      '@nuxt/kit': 3.19.2(magicast@0.3.5)
+      bootstrap-vue-next: 0.40.9(vue-router@4.5.1(vue@3.5.22(typescript@5.9.3)))(vue@3.5.22(typescript@5.9.3))
+    transitivePeerDependencies:
+      - magicast
+
   '@cloudflare/kv-asset-handler@0.4.0':
     dependencies:
       mime: 3.0.0
@@ -4401,6 +4476,8 @@ snapshots:
 
   '@fastify/accept-negotiator@1.1.0':
     optional: true
+
+  '@fortawesome/fontawesome-free@7.1.0': {}
 
   '@humanfs/core@0.19.1': {}
 
@@ -4964,6 +5041,8 @@ snapshots:
     optional: true
 
   '@polka/url@1.0.0-next.29': {}
+
+  '@popperjs/core@2.11.8': {}
 
   '@poppinss/colors@4.1.5':
     dependencies:
@@ -5556,6 +5635,8 @@ snapshots:
       postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
+  awesome-js-funcs@0.1.7: {}
+
   axios@1.12.2:
     dependencies:
       follow-redirects: 1.15.11
@@ -5627,6 +5708,16 @@ snapshots:
     optional: true
 
   boolbase@1.0.0: {}
+
+  bootstrap-vue-next@0.40.9(vue-router@4.5.1(vue@3.5.22(typescript@5.9.3)))(vue@3.5.22(typescript@5.9.3)):
+    dependencies:
+      vue: 3.5.22(typescript@5.9.3)
+    optionalDependencies:
+      vue-router: 4.5.1(vue@3.5.22(typescript@5.9.3))
+
+  bootstrap@5.3.8(@popperjs/core@2.11.8):
+    dependencies:
+      '@popperjs/core': 2.11.8
 
   brace-expansion@1.1.12:
     dependencies:
@@ -5707,6 +5798,10 @@ snapshots:
       lodash.uniq: 4.5.0
 
   caniuse-lite@1.0.30001746: {}
+
+  canvas-snow@0.2.1:
+    dependencies:
+      awesome-js-funcs: 0.1.7
 
   chalk@4.1.2:
     dependencies:
@@ -6782,6 +6877,8 @@ snapshots:
       ufo: 1.6.1
       unplugin: 2.3.10
 
+  magic-snowflakes@7.0.2: {}
+
   magic-string-ast@1.0.2:
     dependencies:
       magic-string: 0.30.19
@@ -7625,6 +7722,8 @@ snapshots:
     optional: true
 
   punycode@2.3.1: {}
+
+  pure-snow.js@2.1.0: {}
 
   push-dir@0.4.1:
     dependencies:

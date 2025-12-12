@@ -98,6 +98,8 @@ declare global {
   const useAppConfig: typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/config')['useAppConfig']
   const useAsyncData: typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/asyncData')['useAsyncData']
   const useAttrs: typeof import('vue')['useAttrs']
+  const useBreadcrumb: typeof import('bootstrap-vue-next/composables/useBreadcrumb')['useBreadcrumb']
+  const useColorMode: typeof import('bootstrap-vue-next/composables/useColorMode')['useColorMode']
   const useCookie: typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/cookie')['useCookie']
   const useCssModule: typeof import('vue')['useCssModule']
   const useCssVars: typeof import('vue')['useCssVars']
@@ -111,11 +113,18 @@ declare global {
   const useLazyFetch: typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/fetch')['useLazyFetch']
   const useLink: typeof import('../../node_modules/.pnpm/vue-router@4.5.1_vue@3.5.22_typescript@5.9.3_/node_modules/vue-router')['useLink']
   const useLoadingIndicator: typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/loading-indicator')['useLoadingIndicator']
+  const useModal: typeof import('bootstrap-vue-next/composables/useModal')['useModal']
+  const useModalController: typeof import('bootstrap-vue-next/composables/useModal')['useModalController']
   const useModel: typeof import('vue')['useModel']
   const useNuxtApp: typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/nuxt')['useNuxtApp']
   const useNuxtData: typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/asyncData')['useNuxtData']
   const useNuxtDevTools: typeof import('../../node_modules/.pnpm/@nuxt+devtools@2.6.5_vite@7_e839dd4405d33c9495c5576b257e6a4f/node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']
+  const useOrchestratorRegistry: typeof import('bootstrap-vue-next/composables/orchestratorShared')['useOrchestratorRegistry']
+  const usePopover: typeof import('bootstrap-vue-next/composables/usePopover')['usePopover']
+  const usePopoverController: typeof import('bootstrap-vue-next/composables/usePopover')['usePopoverController']
   const usePreviewMode: typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/preview')['usePreviewMode']
+  const useProvideDefaults: typeof import('bootstrap-vue-next/composables/useProvideDefaults')['useProvideDefaults']
+  const useRegistry: typeof import('bootstrap-vue-next/composables/useRegistry')['useRegistry']
   const useRequestEvent: typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/ssr')['useRequestEvent']
   const useRequestFetch: typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/ssr')['useRequestFetch']
   const useRequestHeader: typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/ssr')['useRequestHeader']
@@ -154,6 +163,8 @@ declare global {
   const useScriptVimeoPlayer: typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/script-stubs')['useScriptVimeoPlayer']
   const useScriptXPixel: typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/script-stubs')['useScriptXPixel']
   const useScriptYouTubePlayer: typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/script-stubs')['useScriptYouTubePlayer']
+  const useScrollLock: typeof import('bootstrap-vue-next/composables/useScrollLock')['useScrollLock']
+  const useScrollspy: typeof import('bootstrap-vue-next/composables/useScrollspy')['useScrollspy']
   const useSeoMeta: typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/head')['useSeoMeta']
   const useServerHead: typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/head')['useServerHead']
   const useServerHeadSafe: typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/head')['useServerHeadSafe']
@@ -162,6 +173,9 @@ declare global {
   const useSlots: typeof import('vue')['useSlots']
   const useState: typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/state')['useState']
   const useTemplateRef: typeof import('vue')['useTemplateRef']
+  const useToast: typeof import('bootstrap-vue-next/composables/useToast')['useToast']
+  const useToastController: typeof import('bootstrap-vue-next/composables/useToast')['useToastController']
+  const useToggle: typeof import('bootstrap-vue-next/composables/useToggle')['useToggle']
   const useTransitionState: typeof import('vue')['useTransitionState']
   const useVModelSync: typeof import('../../composables/useVModelSync')['useVModelSync']
   const watch: typeof import('vue')['watch']
@@ -282,6 +296,8 @@ declare module 'vue' {
     readonly useAppConfig: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/config')['useAppConfig']>
     readonly useAsyncData: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/asyncData')['useAsyncData']>
     readonly useAttrs: UnwrapRef<typeof import('vue')['useAttrs']>
+    readonly useBreadcrumb: UnwrapRef<typeof import('bootstrap-vue-next/composables/useBreadcrumb')['useBreadcrumb']>
+    readonly useColorMode: UnwrapRef<typeof import('bootstrap-vue-next/composables/useColorMode')['useColorMode']>
     readonly useCookie: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/cookie')['useCookie']>
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
@@ -295,11 +311,18 @@ declare module 'vue' {
     readonly useLazyFetch: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/fetch')['useLazyFetch']>
     readonly useLink: UnwrapRef<typeof import('../../node_modules/.pnpm/vue-router@4.5.1_vue@3.5.22_typescript@5.9.3_/node_modules/vue-router')['useLink']>
     readonly useLoadingIndicator: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/loading-indicator')['useLoadingIndicator']>
+    readonly useModal: UnwrapRef<typeof import('bootstrap-vue-next/composables/useModal')['useModal']>
+    readonly useModalController: UnwrapRef<typeof import('bootstrap-vue-next/composables/useModal')['useModalController']>
     readonly useModel: UnwrapRef<typeof import('vue')['useModel']>
     readonly useNuxtApp: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/nuxt')['useNuxtApp']>
     readonly useNuxtData: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/asyncData')['useNuxtData']>
     readonly useNuxtDevTools: UnwrapRef<typeof import('../../node_modules/.pnpm/@nuxt+devtools@2.6.5_vite@7_e839dd4405d33c9495c5576b257e6a4f/node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']>
+    readonly useOrchestratorRegistry: UnwrapRef<typeof import('bootstrap-vue-next/composables/orchestratorShared')['useOrchestratorRegistry']>
+    readonly usePopover: UnwrapRef<typeof import('bootstrap-vue-next/composables/usePopover')['usePopover']>
+    readonly usePopoverController: UnwrapRef<typeof import('bootstrap-vue-next/composables/usePopover')['usePopoverController']>
     readonly usePreviewMode: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/preview')['usePreviewMode']>
+    readonly useProvideDefaults: UnwrapRef<typeof import('bootstrap-vue-next/composables/useProvideDefaults')['useProvideDefaults']>
+    readonly useRegistry: UnwrapRef<typeof import('bootstrap-vue-next/composables/useRegistry')['useRegistry']>
     readonly useRequestEvent: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/ssr')['useRequestEvent']>
     readonly useRequestFetch: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/ssr')['useRequestFetch']>
     readonly useRequestHeader: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/ssr')['useRequestHeader']>
@@ -338,6 +361,8 @@ declare module 'vue' {
     readonly useScriptVimeoPlayer: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/script-stubs')['useScriptVimeoPlayer']>
     readonly useScriptXPixel: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/script-stubs')['useScriptXPixel']>
     readonly useScriptYouTubePlayer: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/script-stubs')['useScriptYouTubePlayer']>
+    readonly useScrollLock: UnwrapRef<typeof import('bootstrap-vue-next/composables/useScrollLock')['useScrollLock']>
+    readonly useScrollspy: UnwrapRef<typeof import('bootstrap-vue-next/composables/useScrollspy')['useScrollspy']>
     readonly useSeoMeta: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/head')['useSeoMeta']>
     readonly useServerHead: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/head')['useServerHead']>
     readonly useServerHeadSafe: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/head')['useServerHeadSafe']>
@@ -346,6 +371,9 @@ declare module 'vue' {
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
     readonly useState: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/composables/state')['useState']>
     readonly useTemplateRef: UnwrapRef<typeof import('vue')['useTemplateRef']>
+    readonly useToast: UnwrapRef<typeof import('bootstrap-vue-next/composables/useToast')['useToast']>
+    readonly useToastController: UnwrapRef<typeof import('bootstrap-vue-next/composables/useToast')['useToastController']>
+    readonly useToggle: UnwrapRef<typeof import('bootstrap-vue-next/composables/useToggle')['useToggle']>
     readonly useTransitionState: UnwrapRef<typeof import('vue')['useTransitionState']>
     readonly useVModelSync: UnwrapRef<typeof import('../../composables/useVModelSync')['useVModelSync']>
     readonly watch: UnwrapRef<typeof import('vue')['watch']>

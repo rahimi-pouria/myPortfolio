@@ -119,6 +119,8 @@
   },
   "include": [
     "./types/nitro-nuxt.d.ts",
+    "../node_modules/.pnpm/@bootstrap-vue-next+nuxt@0._2ef4b4ede75b405ba4da68985f59587c/node_modules/runtime/server",
+    "../node_modules/.pnpm/@bootstrap-vue-next+nuxt@0._2ef4b4ede75b405ba4da68985f59587c/node_modules/dist/runtime/server",
     "../node_modules/.pnpm/@nuxt+devtools@2.6.5_vite@7_e839dd4405d33c9495c5576b257e6a4f/node_modules/runtime/server",
     "../node_modules/.pnpm/@nuxt+devtools@2.6.5_vite@7_e839dd4405d33c9495c5576b257e6a4f/node_modules/dist/runtime/server",
     "../node_modules/.pnpm/@nuxt+telemetry@2.6.6_magicast@0.3.5/node_modules/runtime/server",
@@ -130,8 +132,8 @@
   ],
   "exclude": [
     "../node_modules",
-    "../../node_modules",
     "../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/node_modules",
+    "../node_modules/.pnpm/@bootstrap-vue-next+nuxt@0._2ef4b4ede75b405ba4da68985f59587c/node_modules/@bootstrap-vue-next/nuxt/node_modules",
     "../node_modules/.pnpm/@nuxt+devtools@2.6.5_vite@7_e839dd4405d33c9495c5576b257e6a4f/node_modules/@nuxt/devtools/node_modules",
     "../node_modules/.pnpm/@nuxt+telemetry@2.6.6_magicast@0.3.5/node_modules/@nuxt/telemetry/node_modules",
     "../dist"

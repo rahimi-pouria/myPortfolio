@@ -1,10 +1,10 @@
 import type { PropType } from "vue";
 
-export const customButton = {
+export const customButtonProps = {
     id: { type: String as PropType<string>, default: '' },
     label: { type: String as PropType<string>, required: true },
     typeBtn: { type: String as PropType<'button' | 'submit' | 'reset'>, required: true },
-    variant: { type: String as PropType<string>, default: 'primary' },
+    variant: { type: String as PropType<"link-primary" | "link-secondary" | "link-success" | "link-danger" | "link-warning" | "link-info" | "link-light" | "link-dark">, default: '' },
     href: { type: String as PropType<string>, default: '' },
     to: { type: String as PropType<string>, default: '' },
     disabled: { type: Boolean, default: false },

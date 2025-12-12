@@ -1,5 +1,5 @@
 import type { PropType, TransitionProps } from "vue";
-import type { ColorVariant, TextColorVariant, BProgressBarProps } from "bootstrapVue-vue-next";
+import type { ColorVariant, TextColorVariant, BProgressBarProps } from "bootstrap-vue-next";
 
 export const customAlert = {
     alertClass: { type: [String, Array, Object] as PropType<any>, required: true, default: undefined },

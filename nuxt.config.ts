@@ -1,8 +1,18 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ['~/assets/main.css'],
+  modules: ['@bootstrap-vue-next/nuxt'],
+  css: [
+      '~/assets/main.css',
+      'bootstrap/dist/css/bootstrap.min.css',
+      '@fortawesome/fontawesome-free/css/all.min.css'
+  ],
   vite: {
     plugins: [
     ],
   },
+    bootstrapVueNext: {
+        composables: true,
+        directives: { all: true },
+        css: true,
+    }
 });

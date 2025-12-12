@@ -14,7 +14,9 @@ type HydrationStrategies = {
 type LazyComponent<T> = (T & DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }>)
 
 interface _GlobalComponents {
-      'BootstrapCustomAccordion': typeof import("../../components/bootstrap/customAccordion.vue")['default']
+      'BootstrapContentAboutUs': typeof import("../../components/bootstrap/content/aboutUs.vue")['default']
+    'BootstrapContentHeaderContent': typeof import("../../components/bootstrap/content/headerContent.vue")['default']
+    'BootstrapCustomAccordion': typeof import("../../components/bootstrap/customAccordion.vue")['default']
     'BootstrapCustomAlert': typeof import("../../components/bootstrap/customAlert.vue")['default']
     'BootstrapCustomAvatar': typeof import("../../components/bootstrap/customAvatar.vue")['default']
     'BootstrapCustomBadge': typeof import("../../components/bootstrap/customBadge.vue")['default']
@@ -46,17 +48,7 @@ interface _GlobalComponents {
     'BootstrapSectionsWebSiteHeroSection': typeof import("../../components/bootstrap/sections/webSite/heroSection.vue")['default']
     'BootstrapSectionsWebSiteSplitHero': typeof import("../../components/bootstrap/sections/webSite/splitHero.vue")['default']
     'BootstrapSlidersCustomCarousel': typeof import("../../components/bootstrap/sliders/customCarousel.vue")['default']
-    'ElementPlusCustomAccordion': typeof import("../../components/elementPlus/customAccordion.vue")['default']
-    'ElementPlusCustomAlert': typeof import("../../components/elementPlus/customAlert.vue")['default']
-    'ElementPlusCustomButton': typeof import("../../components/elementPlus/customButton.vue")['default']
-    'ElementPlusCustomCard': typeof import("../../components/elementPlus/customCard.vue")['default']
-    'ElementPlusCustomDropdown': typeof import("../../components/elementPlus/customDropdown.vue")['default']
-    'ElementPlusCustomInput': typeof import("../../components/elementPlus/customInput.vue")['default']
-    'ElementPlusCustomModal': typeof import("../../components/elementPlus/customModal.vue")['default']
-    'ElementPlusCustomSelect': typeof import("../../components/elementPlus/customSelect.vue")['default']
-    'ElementPlusCustomTable': typeof import("../../components/elementPlus/customTable.vue")['default']
-    'ElementPlusCustomTabs': typeof import("../../components/elementPlus/customTabs.vue")['default']
-    'ElementPlusSlidersCustomCarousel': typeof import("../../components/elementPlus/sliders/customCarousel.vue")['default']
+    'SidbarProfile': typeof import("../../components/sidbar/profile.vue")['default']
     'NuxtWelcome': typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/components/welcome.vue")['default']
     'NuxtLayout': typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/components/nuxt-layout")['default']
     'NuxtErrorBoundary': typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -69,6 +61,110 @@ interface _GlobalComponents {
     'NuxtRouteAnnouncer': typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/components/nuxt-route-announcer")['default']
     'NuxtImg': typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/components/nuxt-stubs")['NuxtImg']
     'NuxtPicture': typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/components/nuxt-stubs")['NuxtPicture']
+    'BAccordion': typeof import("bootstrap-vue-next/components/BAccordion")['BAccordion']
+    'BAccordionItem': typeof import("bootstrap-vue-next/components/BAccordion")['BAccordionItem']
+    'BAlert': typeof import("bootstrap-vue-next/components/BAlert")['BAlert']
+    'BApp': typeof import("bootstrap-vue-next/components/BApp")['BApp']
+    'BAvatar': typeof import("bootstrap-vue-next/components/BAvatar")['BAvatar']
+    'BAvatarGroup': typeof import("bootstrap-vue-next/components/BAvatar")['BAvatarGroup']
+    'BBadge': typeof import("bootstrap-vue-next/components/BBadge")['BBadge']
+    'BBreadcrumb': typeof import("bootstrap-vue-next/components/BBreadcrumb")['BBreadcrumb']
+    'BBreadcrumbItem': typeof import("bootstrap-vue-next/components/BBreadcrumb")['BBreadcrumbItem']
+    'BButton': typeof import("bootstrap-vue-next/components/BButton")['BButton']
+    'BButtonGroup': typeof import("bootstrap-vue-next/components/BButton")['BButtonGroup']
+    'BButtonToolbar': typeof import("bootstrap-vue-next/components/BButton")['BButtonToolbar']
+    'BCloseButton': typeof import("bootstrap-vue-next/components/BButton")['BCloseButton']
+    'BCard': typeof import("bootstrap-vue-next/components/BCard")['BCard']
+    'BCardBody': typeof import("bootstrap-vue-next/components/BCard")['BCardBody']
+    'BCardFooter': typeof import("bootstrap-vue-next/components/BCard")['BCardFooter']
+    'BCardGroup': typeof import("bootstrap-vue-next/components/BCard")['BCardGroup']
+    'BCardHeader': typeof import("bootstrap-vue-next/components/BCard")['BCardHeader']
+    'BCardImg': typeof import("bootstrap-vue-next/components/BCard")['BCardImg']
+    'BCardSubtitle': typeof import("bootstrap-vue-next/components/BCard")['BCardSubtitle']
+    'BCardText': typeof import("bootstrap-vue-next/components/BCard")['BCardText']
+    'BCardTitle': typeof import("bootstrap-vue-next/components/BCard")['BCardTitle']
+    'BCarousel': typeof import("bootstrap-vue-next/components/BCarousel")['BCarousel']
+    'BCarouselSlide': typeof import("bootstrap-vue-next/components/BCarousel")['BCarouselSlide']
+    'BCol': typeof import("bootstrap-vue-next/components/BContainer")['BCol']
+    'BCollapse': typeof import("bootstrap-vue-next/components/BCollapse")['BCollapse']
+    'BContainer': typeof import("bootstrap-vue-next/components/BContainer")['BContainer']
+    'BDropdown': typeof import("bootstrap-vue-next/components/BDropdown")['BDropdown']
+    'BDropdownDivider': typeof import("bootstrap-vue-next/components/BDropdown")['BDropdownDivider']
+    'BDropdownForm': typeof import("bootstrap-vue-next/components/BDropdown")['BDropdownForm']
+    'BDropdownGroup': typeof import("bootstrap-vue-next/components/BDropdown")['BDropdownGroup']
+    'BDropdownHeader': typeof import("bootstrap-vue-next/components/BDropdown")['BDropdownHeader']
+    'BDropdownItem': typeof import("bootstrap-vue-next/components/BDropdown")['BDropdownItem']
+    'BDropdownItemButton': typeof import("bootstrap-vue-next/components/BDropdown")['BDropdownItemButton']
+    'BDropdownText': typeof import("bootstrap-vue-next/components/BDropdown")['BDropdownText']
+    'BForm': typeof import("bootstrap-vue-next/components/BForm")['BForm']
+    'BFormCheckbox': typeof import("bootstrap-vue-next/components/BFormCheckbox")['BFormCheckbox']
+    'BFormCheckboxGroup': typeof import("bootstrap-vue-next/components/BFormCheckbox")['BFormCheckboxGroup']
+    'BFormDatalist': typeof import("bootstrap-vue-next/components/BForm")['BFormDatalist']
+    'BFormFile': typeof import("bootstrap-vue-next/components/BFormFile")['BFormFile']
+    'BFormFloatingLabel': typeof import("bootstrap-vue-next/components/BForm")['BFormFloatingLabel']
+    'BFormGroup': typeof import("bootstrap-vue-next/components/BFormGroup")['BFormGroup']
+    'BFormInput': typeof import("bootstrap-vue-next/components/BFormInput")['BFormInput']
+    'BFormInvalidFeedback': typeof import("bootstrap-vue-next/components/BForm")['BFormInvalidFeedback']
+    'BFormRadio': typeof import("bootstrap-vue-next/components/BFormRadio")['BFormRadio']
+    'BFormRadioGroup': typeof import("bootstrap-vue-next/components/BFormRadio")['BFormRadioGroup']
+    'BFormRating': typeof import("bootstrap-vue-next/components/BFormRating")['BFormRating']
+    'BFormRow': typeof import("bootstrap-vue-next/components/BForm")['BFormRow']
+    'BFormSelect': typeof import("bootstrap-vue-next/components/BFormSelect")['BFormSelect']
+    'BFormSelectOption': typeof import("bootstrap-vue-next/components/BFormSelect")['BFormSelectOption']
+    'BFormSelectOptionGroup': typeof import("bootstrap-vue-next/components/BFormSelect")['BFormSelectOptionGroup']
+    'BFormSpinbutton': typeof import("bootstrap-vue-next/components/BFormSpinbutton")['BFormSpinbutton']
+    'BFormTag': typeof import("bootstrap-vue-next/components/BFormTags")['BFormTag']
+    'BFormTags': typeof import("bootstrap-vue-next/components/BFormTags")['BFormTags']
+    'BFormText': typeof import("bootstrap-vue-next/components/BForm")['BFormText']
+    'BFormTextarea': typeof import("bootstrap-vue-next/components/BFormTextarea")['BFormTextarea']
+    'BFormValidFeedback': typeof import("bootstrap-vue-next/components/BForm")['BFormValidFeedback']
+    'BImg': typeof import("bootstrap-vue-next/components/BImg")['BImg']
+    'BInput': typeof import("bootstrap-vue-next/components/BFormInput")['BInput']
+    'BInputGroup': typeof import("bootstrap-vue-next/components/BInputGroup")['BInputGroup']
+    'BInputGroupText': typeof import("bootstrap-vue-next/components/BInputGroup")['BInputGroupText']
+    'BListGroup': typeof import("bootstrap-vue-next/components/BListGroup")['BListGroup']
+    'BListGroupItem': typeof import("bootstrap-vue-next/components/BListGroup")['BListGroupItem']
+    'BModal': typeof import("bootstrap-vue-next/components/BModal")['BModal']
+    'BModalOrchestrator': typeof import("bootstrap-vue-next/components/BModal")['BModalOrchestrator']
+    'BNav': typeof import("bootstrap-vue-next/components/BNav")['BNav']
+    'BNavForm': typeof import("bootstrap-vue-next/components/BNav")['BNavForm']
+    'BNavItem': typeof import("bootstrap-vue-next/components/BNav")['BNavItem']
+    'BNavItemDropdown': typeof import("bootstrap-vue-next/components/BNav")['BNavItemDropdown']
+    'BNavText': typeof import("bootstrap-vue-next/components/BNav")['BNavText']
+    'BNavbar': typeof import("bootstrap-vue-next/components/BNavbar")['BNavbar']
+    'BNavbarBrand': typeof import("bootstrap-vue-next/components/BNavbar")['BNavbarBrand']
+    'BNavbarNav': typeof import("bootstrap-vue-next/components/BNavbar")['BNavbarNav']
+    'BNavbarToggle': typeof import("bootstrap-vue-next/components/BNavbar")['BNavbarToggle']
+    'BOffcanvas': typeof import("bootstrap-vue-next/components/BOffcanvas")['BOffcanvas']
+    'BOverlay': typeof import("bootstrap-vue-next/components/BOverlay")['BOverlay']
+    'BOrchestrator': typeof import("bootstrap-vue-next/components/BApp")['BOrchestrator']
+    'BPagination': typeof import("bootstrap-vue-next/components/BPagination")['BPagination']
+    'BPlaceholder': typeof import("bootstrap-vue-next/components/BPlaceholder")['BPlaceholder']
+    'BPlaceholderButton': typeof import("bootstrap-vue-next/components/BPlaceholder")['BPlaceholderButton']
+    'BPlaceholderCard': typeof import("bootstrap-vue-next/components/BPlaceholder")['BPlaceholderCard']
+    'BPlaceholderTable': typeof import("bootstrap-vue-next/components/BPlaceholder")['BPlaceholderTable']
+    'BPlaceholderWrapper': typeof import("bootstrap-vue-next/components/BPlaceholder")['BPlaceholderWrapper']
+    'BPopover': typeof import("bootstrap-vue-next/components/BPopover")['BPopover']
+    'BProgress': typeof import("bootstrap-vue-next/components/BProgress")['BProgress']
+    'BRow': typeof import("bootstrap-vue-next/components/BContainer")['BRow']
+    'BSpinner': typeof import("bootstrap-vue-next/components/BSpinner")['BSpinner']
+    'BTab': typeof import("bootstrap-vue-next/components/BTabs")['BTab']
+    'BTabs': typeof import("bootstrap-vue-next/components/BTabs")['BTabs']
+    'BToast': typeof import("bootstrap-vue-next/components/BToast")['BToast']
+    'BToastOrchestrator': typeof import("bootstrap-vue-next/components/BToast")['BToastOrchestrator']
+    'BTooltip': typeof import("bootstrap-vue-next/components/BTooltip")['BTooltip']
+    'BLink': typeof import("bootstrap-vue-next/components/BLink")['BLink']
+    'BProgressBar': typeof import("bootstrap-vue-next/components/BProgress")['BProgressBar']
+    'BTableSimple': typeof import("bootstrap-vue-next/components/BTable")['BTableSimple']
+    'BTableLite': typeof import("bootstrap-vue-next/components/BTable")['BTableLite']
+    'BTable': typeof import("bootstrap-vue-next/components/BTable")['BTable']
+    'BTbody': typeof import("bootstrap-vue-next/components/BTable")['BTbody']
+    'BTd': typeof import("bootstrap-vue-next/components/BTable")['BTd']
+    'BTh': typeof import("bootstrap-vue-next/components/BTable")['BTh']
+    'BThead': typeof import("bootstrap-vue-next/components/BTable")['BThead']
+    'BTfoot': typeof import("bootstrap-vue-next/components/BTable")['BTfoot']
+    'BTr': typeof import("bootstrap-vue-next/components/BTable")['BTr']
+    'BPopoverOrchestrator': typeof import("bootstrap-vue-next/components/BPopover")['BPopoverOrchestrator']
     'NuxtPage': typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/pages/runtime/page")['default']
     'NoScript': typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/head/runtime/components")['NoScript']
     'Link': typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/head/runtime/components")['Link']
@@ -81,7 +177,9 @@ interface _GlobalComponents {
     'Body': typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/head/runtime/components")['Body']
     'NuxtIsland': typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/components/server-placeholder")['default']
-      'LazyBootstrapCustomAccordion': LazyComponent<typeof import("../../components/bootstrap/customAccordion.vue")['default']>
+      'LazyBootstrapContentAboutUs': LazyComponent<typeof import("../../components/bootstrap/content/aboutUs.vue")['default']>
+    'LazyBootstrapContentHeaderContent': LazyComponent<typeof import("../../components/bootstrap/content/headerContent.vue")['default']>
+    'LazyBootstrapCustomAccordion': LazyComponent<typeof import("../../components/bootstrap/customAccordion.vue")['default']>
     'LazyBootstrapCustomAlert': LazyComponent<typeof import("../../components/bootstrap/customAlert.vue")['default']>
     'LazyBootstrapCustomAvatar': LazyComponent<typeof import("../../components/bootstrap/customAvatar.vue")['default']>
     'LazyBootstrapCustomBadge': LazyComponent<typeof import("../../components/bootstrap/customBadge.vue")['default']>
@@ -113,17 +211,7 @@ interface _GlobalComponents {
     'LazyBootstrapSectionsWebSiteHeroSection': LazyComponent<typeof import("../../components/bootstrap/sections/webSite/heroSection.vue")['default']>
     'LazyBootstrapSectionsWebSiteSplitHero': LazyComponent<typeof import("../../components/bootstrap/sections/webSite/splitHero.vue")['default']>
     'LazyBootstrapSlidersCustomCarousel': LazyComponent<typeof import("../../components/bootstrap/sliders/customCarousel.vue")['default']>
-    'LazyElementPlusCustomAccordion': LazyComponent<typeof import("../../components/elementPlus/customAccordion.vue")['default']>
-    'LazyElementPlusCustomAlert': LazyComponent<typeof import("../../components/elementPlus/customAlert.vue")['default']>
-    'LazyElementPlusCustomButton': LazyComponent<typeof import("../../components/elementPlus/customButton.vue")['default']>
-    'LazyElementPlusCustomCard': LazyComponent<typeof import("../../components/elementPlus/customCard.vue")['default']>
-    'LazyElementPlusCustomDropdown': LazyComponent<typeof import("../../components/elementPlus/customDropdown.vue")['default']>
-    'LazyElementPlusCustomInput': LazyComponent<typeof import("../../components/elementPlus/customInput.vue")['default']>
-    'LazyElementPlusCustomModal': LazyComponent<typeof import("../../components/elementPlus/customModal.vue")['default']>
-    'LazyElementPlusCustomSelect': LazyComponent<typeof import("../../components/elementPlus/customSelect.vue")['default']>
-    'LazyElementPlusCustomTable': LazyComponent<typeof import("../../components/elementPlus/customTable.vue")['default']>
-    'LazyElementPlusCustomTabs': LazyComponent<typeof import("../../components/elementPlus/customTabs.vue")['default']>
-    'LazyElementPlusSlidersCustomCarousel': LazyComponent<typeof import("../../components/elementPlus/sliders/customCarousel.vue")['default']>
+    'LazySidbarProfile': LazyComponent<typeof import("../../components/sidbar/profile.vue")['default']>
     'LazyNuxtWelcome': LazyComponent<typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/components/welcome.vue")['default']>
     'LazyNuxtLayout': LazyComponent<typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
     'LazyNuxtErrorBoundary': LazyComponent<typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>
@@ -136,6 +224,110 @@ interface _GlobalComponents {
     'LazyNuxtRouteAnnouncer': LazyComponent<typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/components/nuxt-route-announcer")['default']>
     'LazyNuxtImg': LazyComponent<typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/components/nuxt-stubs")['NuxtImg']>
     'LazyNuxtPicture': LazyComponent<typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/components/nuxt-stubs")['NuxtPicture']>
+    'LazyBAccordion': LazyComponent<typeof import("bootstrap-vue-next/components/BAccordion")['BAccordion']>
+    'LazyBAccordionItem': LazyComponent<typeof import("bootstrap-vue-next/components/BAccordion")['BAccordionItem']>
+    'LazyBAlert': LazyComponent<typeof import("bootstrap-vue-next/components/BAlert")['BAlert']>
+    'LazyBApp': LazyComponent<typeof import("bootstrap-vue-next/components/BApp")['BApp']>
+    'LazyBAvatar': LazyComponent<typeof import("bootstrap-vue-next/components/BAvatar")['BAvatar']>
+    'LazyBAvatarGroup': LazyComponent<typeof import("bootstrap-vue-next/components/BAvatar")['BAvatarGroup']>
+    'LazyBBadge': LazyComponent<typeof import("bootstrap-vue-next/components/BBadge")['BBadge']>
+    'LazyBBreadcrumb': LazyComponent<typeof import("bootstrap-vue-next/components/BBreadcrumb")['BBreadcrumb']>
+    'LazyBBreadcrumbItem': LazyComponent<typeof import("bootstrap-vue-next/components/BBreadcrumb")['BBreadcrumbItem']>
+    'LazyBButton': LazyComponent<typeof import("bootstrap-vue-next/components/BButton")['BButton']>
+    'LazyBButtonGroup': LazyComponent<typeof import("bootstrap-vue-next/components/BButton")['BButtonGroup']>
+    'LazyBButtonToolbar': LazyComponent<typeof import("bootstrap-vue-next/components/BButton")['BButtonToolbar']>
+    'LazyBCloseButton': LazyComponent<typeof import("bootstrap-vue-next/components/BButton")['BCloseButton']>
+    'LazyBCard': LazyComponent<typeof import("bootstrap-vue-next/components/BCard")['BCard']>
+    'LazyBCardBody': LazyComponent<typeof import("bootstrap-vue-next/components/BCard")['BCardBody']>
+    'LazyBCardFooter': LazyComponent<typeof import("bootstrap-vue-next/components/BCard")['BCardFooter']>
+    'LazyBCardGroup': LazyComponent<typeof import("bootstrap-vue-next/components/BCard")['BCardGroup']>
+    'LazyBCardHeader': LazyComponent<typeof import("bootstrap-vue-next/components/BCard")['BCardHeader']>
+    'LazyBCardImg': LazyComponent<typeof import("bootstrap-vue-next/components/BCard")['BCardImg']>
+    'LazyBCardSubtitle': LazyComponent<typeof import("bootstrap-vue-next/components/BCard")['BCardSubtitle']>
+    'LazyBCardText': LazyComponent<typeof import("bootstrap-vue-next/components/BCard")['BCardText']>
+    'LazyBCardTitle': LazyComponent<typeof import("bootstrap-vue-next/components/BCard")['BCardTitle']>
+    'LazyBCarousel': LazyComponent<typeof import("bootstrap-vue-next/components/BCarousel")['BCarousel']>
+    'LazyBCarouselSlide': LazyComponent<typeof import("bootstrap-vue-next/components/BCarousel")['BCarouselSlide']>
+    'LazyBCol': LazyComponent<typeof import("bootstrap-vue-next/components/BContainer")['BCol']>
+    'LazyBCollapse': LazyComponent<typeof import("bootstrap-vue-next/components/BCollapse")['BCollapse']>
+    'LazyBContainer': LazyComponent<typeof import("bootstrap-vue-next/components/BContainer")['BContainer']>
+    'LazyBDropdown': LazyComponent<typeof import("bootstrap-vue-next/components/BDropdown")['BDropdown']>
+    'LazyBDropdownDivider': LazyComponent<typeof import("bootstrap-vue-next/components/BDropdown")['BDropdownDivider']>
+    'LazyBDropdownForm': LazyComponent<typeof import("bootstrap-vue-next/components/BDropdown")['BDropdownForm']>
+    'LazyBDropdownGroup': LazyComponent<typeof import("bootstrap-vue-next/components/BDropdown")['BDropdownGroup']>
+    'LazyBDropdownHeader': LazyComponent<typeof import("bootstrap-vue-next/components/BDropdown")['BDropdownHeader']>
+    'LazyBDropdownItem': LazyComponent<typeof import("bootstrap-vue-next/components/BDropdown")['BDropdownItem']>
+    'LazyBDropdownItemButton': LazyComponent<typeof import("bootstrap-vue-next/components/BDropdown")['BDropdownItemButton']>
+    'LazyBDropdownText': LazyComponent<typeof import("bootstrap-vue-next/components/BDropdown")['BDropdownText']>
+    'LazyBForm': LazyComponent<typeof import("bootstrap-vue-next/components/BForm")['BForm']>
+    'LazyBFormCheckbox': LazyComponent<typeof import("bootstrap-vue-next/components/BFormCheckbox")['BFormCheckbox']>
+    'LazyBFormCheckboxGroup': LazyComponent<typeof import("bootstrap-vue-next/components/BFormCheckbox")['BFormCheckboxGroup']>
+    'LazyBFormDatalist': LazyComponent<typeof import("bootstrap-vue-next/components/BForm")['BFormDatalist']>
+    'LazyBFormFile': LazyComponent<typeof import("bootstrap-vue-next/components/BFormFile")['BFormFile']>
+    'LazyBFormFloatingLabel': LazyComponent<typeof import("bootstrap-vue-next/components/BForm")['BFormFloatingLabel']>
+    'LazyBFormGroup': LazyComponent<typeof import("bootstrap-vue-next/components/BFormGroup")['BFormGroup']>
+    'LazyBFormInput': LazyComponent<typeof import("bootstrap-vue-next/components/BFormInput")['BFormInput']>
+    'LazyBFormInvalidFeedback': LazyComponent<typeof import("bootstrap-vue-next/components/BForm")['BFormInvalidFeedback']>
+    'LazyBFormRadio': LazyComponent<typeof import("bootstrap-vue-next/components/BFormRadio")['BFormRadio']>
+    'LazyBFormRadioGroup': LazyComponent<typeof import("bootstrap-vue-next/components/BFormRadio")['BFormRadioGroup']>
+    'LazyBFormRating': LazyComponent<typeof import("bootstrap-vue-next/components/BFormRating")['BFormRating']>
+    'LazyBFormRow': LazyComponent<typeof import("bootstrap-vue-next/components/BForm")['BFormRow']>
+    'LazyBFormSelect': LazyComponent<typeof import("bootstrap-vue-next/components/BFormSelect")['BFormSelect']>
+    'LazyBFormSelectOption': LazyComponent<typeof import("bootstrap-vue-next/components/BFormSelect")['BFormSelectOption']>
+    'LazyBFormSelectOptionGroup': LazyComponent<typeof import("bootstrap-vue-next/components/BFormSelect")['BFormSelectOptionGroup']>
+    'LazyBFormSpinbutton': LazyComponent<typeof import("bootstrap-vue-next/components/BFormSpinbutton")['BFormSpinbutton']>
+    'LazyBFormTag': LazyComponent<typeof import("bootstrap-vue-next/components/BFormTags")['BFormTag']>
+    'LazyBFormTags': LazyComponent<typeof import("bootstrap-vue-next/components/BFormTags")['BFormTags']>
+    'LazyBFormText': LazyComponent<typeof import("bootstrap-vue-next/components/BForm")['BFormText']>
+    'LazyBFormTextarea': LazyComponent<typeof import("bootstrap-vue-next/components/BFormTextarea")['BFormTextarea']>
+    'LazyBFormValidFeedback': LazyComponent<typeof import("bootstrap-vue-next/components/BForm")['BFormValidFeedback']>
+    'LazyBImg': LazyComponent<typeof import("bootstrap-vue-next/components/BImg")['BImg']>
+    'LazyBInput': LazyComponent<typeof import("bootstrap-vue-next/components/BFormInput")['BInput']>
+    'LazyBInputGroup': LazyComponent<typeof import("bootstrap-vue-next/components/BInputGroup")['BInputGroup']>
+    'LazyBInputGroupText': LazyComponent<typeof import("bootstrap-vue-next/components/BInputGroup")['BInputGroupText']>
+    'LazyBListGroup': LazyComponent<typeof import("bootstrap-vue-next/components/BListGroup")['BListGroup']>
+    'LazyBListGroupItem': LazyComponent<typeof import("bootstrap-vue-next/components/BListGroup")['BListGroupItem']>
+    'LazyBModal': LazyComponent<typeof import("bootstrap-vue-next/components/BModal")['BModal']>
+    'LazyBModalOrchestrator': LazyComponent<typeof import("bootstrap-vue-next/components/BModal")['BModalOrchestrator']>
+    'LazyBNav': LazyComponent<typeof import("bootstrap-vue-next/components/BNav")['BNav']>
+    'LazyBNavForm': LazyComponent<typeof import("bootstrap-vue-next/components/BNav")['BNavForm']>
+    'LazyBNavItem': LazyComponent<typeof import("bootstrap-vue-next/components/BNav")['BNavItem']>
+    'LazyBNavItemDropdown': LazyComponent<typeof import("bootstrap-vue-next/components/BNav")['BNavItemDropdown']>
+    'LazyBNavText': LazyComponent<typeof import("bootstrap-vue-next/components/BNav")['BNavText']>
+    'LazyBNavbar': LazyComponent<typeof import("bootstrap-vue-next/components/BNavbar")['BNavbar']>
+    'LazyBNavbarBrand': LazyComponent<typeof import("bootstrap-vue-next/components/BNavbar")['BNavbarBrand']>
+    'LazyBNavbarNav': LazyComponent<typeof import("bootstrap-vue-next/components/BNavbar")['BNavbarNav']>
+    'LazyBNavbarToggle': LazyComponent<typeof import("bootstrap-vue-next/components/BNavbar")['BNavbarToggle']>
+    'LazyBOffcanvas': LazyComponent<typeof import("bootstrap-vue-next/components/BOffcanvas")['BOffcanvas']>
+    'LazyBOverlay': LazyComponent<typeof import("bootstrap-vue-next/components/BOverlay")['BOverlay']>
+    'LazyBOrchestrator': LazyComponent<typeof import("bootstrap-vue-next/components/BApp")['BOrchestrator']>
+    'LazyBPagination': LazyComponent<typeof import("bootstrap-vue-next/components/BPagination")['BPagination']>
+    'LazyBPlaceholder': LazyComponent<typeof import("bootstrap-vue-next/components/BPlaceholder")['BPlaceholder']>
+    'LazyBPlaceholderButton': LazyComponent<typeof import("bootstrap-vue-next/components/BPlaceholder")['BPlaceholderButton']>
+    'LazyBPlaceholderCard': LazyComponent<typeof import("bootstrap-vue-next/components/BPlaceholder")['BPlaceholderCard']>
+    'LazyBPlaceholderTable': LazyComponent<typeof import("bootstrap-vue-next/components/BPlaceholder")['BPlaceholderTable']>
+    'LazyBPlaceholderWrapper': LazyComponent<typeof import("bootstrap-vue-next/components/BPlaceholder")['BPlaceholderWrapper']>
+    'LazyBPopover': LazyComponent<typeof import("bootstrap-vue-next/components/BPopover")['BPopover']>
+    'LazyBProgress': LazyComponent<typeof import("bootstrap-vue-next/components/BProgress")['BProgress']>
+    'LazyBRow': LazyComponent<typeof import("bootstrap-vue-next/components/BContainer")['BRow']>
+    'LazyBSpinner': LazyComponent<typeof import("bootstrap-vue-next/components/BSpinner")['BSpinner']>
+    'LazyBTab': LazyComponent<typeof import("bootstrap-vue-next/components/BTabs")['BTab']>
+    'LazyBTabs': LazyComponent<typeof import("bootstrap-vue-next/components/BTabs")['BTabs']>
+    'LazyBToast': LazyComponent<typeof import("bootstrap-vue-next/components/BToast")['BToast']>
+    'LazyBToastOrchestrator': LazyComponent<typeof import("bootstrap-vue-next/components/BToast")['BToastOrchestrator']>
+    'LazyBTooltip': LazyComponent<typeof import("bootstrap-vue-next/components/BTooltip")['BTooltip']>
+    'LazyBLink': LazyComponent<typeof import("bootstrap-vue-next/components/BLink")['BLink']>
+    'LazyBProgressBar': LazyComponent<typeof import("bootstrap-vue-next/components/BProgress")['BProgressBar']>
+    'LazyBTableSimple': LazyComponent<typeof import("bootstrap-vue-next/components/BTable")['BTableSimple']>
+    'LazyBTableLite': LazyComponent<typeof import("bootstrap-vue-next/components/BTable")['BTableLite']>
+    'LazyBTable': LazyComponent<typeof import("bootstrap-vue-next/components/BTable")['BTable']>
+    'LazyBTbody': LazyComponent<typeof import("bootstrap-vue-next/components/BTable")['BTbody']>
+    'LazyBTd': LazyComponent<typeof import("bootstrap-vue-next/components/BTable")['BTd']>
+    'LazyBTh': LazyComponent<typeof import("bootstrap-vue-next/components/BTable")['BTh']>
+    'LazyBThead': LazyComponent<typeof import("bootstrap-vue-next/components/BTable")['BThead']>
+    'LazyBTfoot': LazyComponent<typeof import("bootstrap-vue-next/components/BTable")['BTfoot']>
+    'LazyBTr': LazyComponent<typeof import("bootstrap-vue-next/components/BTable")['BTr']>
+    'LazyBPopoverOrchestrator': LazyComponent<typeof import("bootstrap-vue-next/components/BPopover")['BPopoverOrchestrator']>
     'LazyNuxtPage': LazyComponent<typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/pages/runtime/page")['default']>
     'LazyNoScript': LazyComponent<typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/head/runtime/components")['NoScript']>
     'LazyLink': LazyComponent<typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/head/runtime/components")['Link']>
