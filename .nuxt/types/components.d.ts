@@ -16,6 +16,7 @@ type LazyComponent<T> = (T & DefineComponent<HydrationStrategies, {}, {}, {}, {}
 interface _GlobalComponents {
       'BootstrapContentAboutUs': typeof import("../../components/bootstrap/content/aboutUs.vue")['default']
     'BootstrapContentHeaderContent': typeof import("../../components/bootstrap/content/headerContent.vue")['default']
+    'BootstrapContentSkills': typeof import("../../components/bootstrap/content/skills.vue")['default']
     'BootstrapCustomAccordion': typeof import("../../components/bootstrap/customAccordion.vue")['default']
     'BootstrapCustomAlert': typeof import("../../components/bootstrap/customAlert.vue")['default']
     'BootstrapCustomAvatar': typeof import("../../components/bootstrap/customAvatar.vue")['default']
@@ -179,6 +180,7 @@ interface _GlobalComponents {
     'NuxtRouteAnnouncer': typeof import("../../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/components/server-placeholder")['default']
       'LazyBootstrapContentAboutUs': LazyComponent<typeof import("../../components/bootstrap/content/aboutUs.vue")['default']>
     'LazyBootstrapContentHeaderContent': LazyComponent<typeof import("../../components/bootstrap/content/headerContent.vue")['default']>
+    'LazyBootstrapContentSkills': LazyComponent<typeof import("../../components/bootstrap/content/skills.vue")['default']>
     'LazyBootstrapCustomAccordion': LazyComponent<typeof import("../../components/bootstrap/customAccordion.vue")['default']>
     'LazyBootstrapCustomAlert': LazyComponent<typeof import("../../components/bootstrap/customAlert.vue")['default']>
     'LazyBootstrapCustomAvatar': LazyComponent<typeof import("../../components/bootstrap/customAvatar.vue")['default']>

@@ -1,0 +1,23 @@
+.show-skills{
+    border: 1px solid #858585 !important;
+    border-radius: 5px;
+    padding-top: 20px;
+}
+
+.circle-skill{
+    border-radius: 50%;
+    border: 1px solid #fdc007 !important;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 4px;
+    padding-bottom: 2px;
+    background-color: #141515 !important;
+}
+
+.circle-skill img {
+    width: 20px;
+    height: 20px;
+}

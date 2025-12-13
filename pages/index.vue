@@ -6,6 +6,7 @@
       <div class="d-flex content flex-column w-60">
         <headerContent />
         <about-us />
+        <skills />
       </div>
   </div>
 </template>
@@ -17,6 +18,7 @@ import Profile from "~/components/sidbar/profile.vue";
 import headerContent from "~/components/bootstrap/content/headerContent.vue"
 import Snowflakes from "magic-snowflakes";
 import AboutUs from "~/components/bootstrap/content/aboutUs.vue";
+import Skills from "~/components/bootstrap/content/skills.vue";
 
 onMounted(() => {
   new Snowflakes({
