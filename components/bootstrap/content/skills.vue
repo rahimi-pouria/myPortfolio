@@ -1,12 +1,19 @@
 <template>
-    <div class="d-flex w-100 flex-wrap gap-2">
-        <div v-for="(item, i) in skills" :key="i" class="d-flex flex-column show-skills w-23 justify-content-center align-items-center">
+    <div class="d-flex flex-column gap-3">
+      <div class="d-flex">
+        <h2>my skills</h2>
+      </div>
+      <div class="d-flex justify-center align-items-center  w-100 flex-wrap gap-2">
+        <div v-for="(item, i) in skills" :key="i"
+             class="d-flex flex-column show-skills justify-content-center align-items-center">
           <span class="circle-skill">
             <img :src="item.icon" alt="">
           </span>
           <p>{{ item.name }}</p>
         </div>
+      </div>
     </div>
+
 </template>
 
 <script setup lang="ts">
@@ -26,6 +33,7 @@
   import htmlIcon from '@/assets/img/svg/html5.svg'
   import cssIcon from '@/assets/img/svg/css.svg'
   import javascriptIcon from '@/assets/img/svg/javascript.svg'
+  import CustomCard from "~/components/bootstrap/customCard.vue";
   interface skillsType {
     id: number,
     name: string,

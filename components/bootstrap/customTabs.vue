@@ -10,7 +10,8 @@
 </template>
 
 <script setup lang="ts">
-import { customTabs } from "@/props/customTabs.ts";
+//@ts-ignore
+import { customTabs } from "@/props/bootstrap/customTabs.ts";
 import { BTabs, BTab } from 'bootstrap-vue-next'
 import {ref} from "vue";
 import {useI18n} from "vue-i18n";

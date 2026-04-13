@@ -1,6 +1,6 @@
 <template>
   <CustomCard id="product-card" title="" sub-title="full stack developer" img-src="/img/pouria.png" img-width="50"
-      img-height="280" img-top class-card="shadow rounded custom-card" description-card="software engineer"
+      img-height="280" img-top class-card="shadow rounded custom-card position-fixed" description-card="software engineer"
       :show-btn="true" btn-class="btn btn-warning w-100" label-btn="" label=""  img-alt="" link-btn=""
               type-btn="button">
     <template #customBody>
@@ -11,8 +11,9 @@
           </h2>
         </div>
         <div class="subtitle d-flex justify-content-center align-items-center text-warning">
-          <h5>
-            <span>software Engineer</span>
+          <h5 class="d-flex flex-column justify-center align-items-center gap-3">
+            <span>Email: pouria.rahimy@gmail.com</span>
+            <span>Mobile: 09184095907</span>
           </h5>
         </div>
         <div class="d-flex social-media justify-content-center align-items-center gap-4">

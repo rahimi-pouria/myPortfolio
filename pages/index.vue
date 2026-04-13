@@ -1,12 +1,10 @@
 <template>
-  <div class="container pt-8 d-flex w-100">
-      <div class="d-flex w-30">
+  <div class="container pt-8 d-flex w-100 position-relative">
+      <div class="d-flex w-25">
         <profile />
       </div>
-      <div class="d-flex content flex-column w-60">
+      <div class="d-flex content flex-column w-75">
         <headerContent />
-        <about-us />
-        <skills />
       </div>
   </div>
 </template>
@@ -17,8 +15,7 @@ import { onMounted } from "vue";
 import Profile from "~/components/sidbar/profile.vue";
 import headerContent from "~/components/bootstrap/content/headerContent.vue"
 import Snowflakes from "magic-snowflakes";
-import AboutUs from "~/components/bootstrap/content/aboutUs.vue";
-import Skills from "~/components/bootstrap/content/skills.vue";
+
 
 onMounted(() => {
   new Snowflakes({

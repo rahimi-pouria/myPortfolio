@@ -13,7 +13,7 @@ export const customCardProps = {
     imgBottom: { type: Boolean as PropType<boolean>, default: false },
     imgEnd: { type: Boolean as PropType<boolean>, default: false },
     imgStart: { type: Boolean as PropType<boolean>, default: false },
-    imgHeight: { type: [String, Number] as PropType<string | number>, default: '' },
+    imgHeight: { type: [String, Number] as PropType<string | number>, default: 300 },
     imgWidth: { type: [String, Number] as PropType<string | number>, default: '' },
     noBody: { type: Boolean as PropType<boolean>, default: false },
     overlay: { type: Boolean as PropType<boolean>, default: false },
@@ -32,5 +32,9 @@ export const customCardProps = {
     labelBtn: { type: String as PropType<string>, required: true },
     btnClass: { type: String as PropType<string>, default: '' },
     variantBtn: { type: String as PropType<string>, default: '' },
-    typeButton: { type: String as PropType<string>, default: 'button', validator: (value: string) => ['button', 'submit', 'reset'].includes(value) }
+    typeButton: { type: String as PropType<string>, default: 'button', validator: (value: string) => ['button', 'submit', 'reset'].includes(value) },
+    enableHoverAnimation: { type: Boolean as PropType<boolean>, default: false },
+    hoverBorderColor: { type: String as PropType<string>, default: '#4a9eff' },
+    hoverBorderWidth: { type: String as PropType<string>, default: '2px' },
+    hoverTransitionDuration: { type: String as PropType<string>, default: '0.3s' }
 };

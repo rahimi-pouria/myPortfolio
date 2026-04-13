@@ -40,6 +40,7 @@ const props = defineProps({
   ...customCardProps,
   ...customButtonProps
 });
+
 </script>
 
 <style scoped lang="scss">

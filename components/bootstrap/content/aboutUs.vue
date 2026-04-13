@@ -21,32 +21,23 @@
 
       My long-term mission is to create software that makes life easier, contributes to innovation, and helps businesses grow.
     </p>
-    <div class="d-flex Work-history w-100 gap-4">
-      <div class="d-flex w-30 gap-2">
-        <p class="Records">4+</p>
-        <span>Years of Experience</span>
+    <div class="d-flex flex-column Work-history pt-2 w-100 gap-4">
+      <div class="d-flex">
+        <h2> What Makes Me Different</h2>
       </div>
-      <div class="d-flex w-30 gap-2">
-        <p class="Records">10</p>
-        <span>CompletedProjects</span>
-      </div>
-      <div class="d-flex flex-column w-30 contact">
-        <div class="d-flex gap-2">
-          <p class="Records">Email:</p>
-          <span>
-            <strong class="show-key-word">
-                   pouria.rahimy@gmail.com
-            </strong>
-          </span>
-        </div>
-        <div class="d-flex gap-2">
-          <p class="Records">Phone</p>
-          <span>
-              <strong class="show-key-word">
-                    +989112672614
-              </strong>
-            </span>
-        </div>
+      <div class="d-flex flex-wrap gap-4 w-100">
+        <CustomCard
+            v-for="(item) in coreSoftSkills" :key="item.id"
+            :id="`card-${item.id}`"
+            :title="item.title"
+            img-left
+            class-card="w-50 about-us-card-new"
+            custom-class-text="description-text"
+            :description-card="item.description"
+            :show-btn="true"
+            label-btn="read more"
+            btn-class="custom-btn-core-soft-skills"
+        />
       </div>
     </div>
   </div>
@@ -55,12 +46,52 @@
 
 <script setup lang="ts">
   import {ref, onMounted} from 'vue'
+  import CustomCard from "~/components/bootstrap/customCard.vue";
+
   const show = ref(false)
   const slideText = () => {
     setInterval(() => {
       show.value = !show.value
     }, 5000)
   }
+
+  interface coreSoftSkillsType {
+    id: number,
+    title: string,
+    icon: string,
+    description: string,
+  }
+
+  const coreSoftSkills: coreSoftSkillsType[]= [
+    {
+        id: 1,
+        title: 'Effective Communication with Diverse Teams',
+        icon: '',
+        description: 'Concise Explanation: Fostering collaboration and knowledge transfer between technical and non-technical teams; bridging gaps and ensuring alignment towards common goals within Agile environments.\n' +
+            'Key Takeaway: Ability to connect different departments and align everyone',
+    },
+    {
+      id: 2,
+      title: 'Teamwork & Adaptability',
+      icon: '',
+      description: 'Concise Explanation: Quickly adapting to diverse work environments and methodologies; actively contributing in Agile settings for optimal group outcomes.\n' +
+          'Key Takeaway: Demonstrates understanding of modern workplaces and rapid team integration.',
+    },
+    {
+      id: 3,
+      title: 'Engineered Problem-Solving',
+      icon: '',
+      description: 'Concise Explanation: Analyzing complex technical challenges and designing practical, scalable, efficient solutions considering performance, security, and maintainability.\n' +
+          'Key Takeaway: Highlights a thoughtful, engineering-focused approach to solutions with long-term implications.',
+    },
+    {
+      id: 4,
+      title: 'Idea to Product Transformation',
+      icon: '',
+      description: 'Concise Explanation: Driving the product lifecycle from concept to launch, encompassing requirements definition, implementation, testing, and ensuring successful product delivery.\n' +
+          'Key Takeaway: Shows mastery of the entire development and delivery process.',
+    }
+  ]
 
   onMounted(() => {
     slideText()
