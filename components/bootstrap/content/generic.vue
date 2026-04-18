@@ -15,10 +15,10 @@
       <div :class="['text-muted lh-lg', props.customClassDescription]">
         <p class="text">{{ props.description }}</p>
       </div>
-      <div v-for="(item) in props.professionalProfile" :key="item.id" class="d-flex flex-column">
-        <h3 :class="['fw-bold text-white mb-4', props.customClassTitleHeading]">
+      <div v-for="(item) in props.professionalProfile" :key="item.id" class="d-flex flex-column ">
+        <h4 :class="['fw-bold text-white mb-4', props.customClassTitleHeading]">
           {{ item.title }}
-        </h3>
+        </h4>
         <div :class="['text-muted lh-lg', props.customClassDescriptionHeading]">
           <p v-html="item.description" class="text"></p>
         </div>

@@ -55,5 +55,5 @@ Part of a cross-framework UI system adaptable to multiple frontend environments.
   :type-button="'submit'"
   :is-loading="isSubmitting"
   :is-loading-class="'spinner-border spinner-border-sm text-white'"
-  @click="submitForm"
+  @click="submitForm"0
 />
