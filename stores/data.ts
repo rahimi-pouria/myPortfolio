@@ -24,7 +24,7 @@ import createProject  from "~/assets/video/createProject.mp4"
 import formBuilderVideo from "~/assets/video/frameWork.mp4"
 import website from "~/assets/video/websiteCrossUi.mp4"
 import showComponent from "~/assets/video/showComponentCrossui.mp4"
-
+import extention from "~/assets/img/jpg/extentionGoogleChroom.jpg"
 import { ref } from 'vue'
 
 interface projectType {
@@ -114,12 +114,11 @@ export const project  = ref<projectType[]>([
     {
         id: 4,
         title: "extention Google",
-        description: "Developed scalable LMS and TMS solutions utilizing Vue.js.\n" +
-            "Architected and implemented multi-role dashboards (Admin, Instructor, and Student panels), focusing on modular design and high-performance UI components",
+        description: "I’m excited to share a Google Chrome extension I developed using React, designed to streamline your daily workflow and keep you informed. This extension seamlessly integrates essential information and functionalities directly into your browser experience",
         location: "Tehran",
         position: "Frontend Developer | Vesta Information Technology",
         typeProject: 'personal project',
-        img: squidGame,
+        img: extention,
         linkWebsite: '',
         linkGitHub: 'https://github.com/rahimi-pouria/ExtentionChroomFromReact',
         linkPackageManager: ''
