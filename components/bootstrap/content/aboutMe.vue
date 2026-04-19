@@ -2,18 +2,18 @@
   <article class="article-detail d-flex flex-column w-100 shadow-sm rounded-3 overflow-hidden">
     <div :class="['article-img-container position-relative', props.customClassImageWrapper]">
       <img
-          :class="['img-fluid w-100 object-fit-cover', props.customClassImg]"
+          :class="['img-fluid w-100  object-fit-cover', props.customClassImg]"
           :src="props.imgSrc"
           :alt="props.altImg"
       >
     </div>
 
-    <div :class="['p-4 p-md-5', props.customClassWrapperText]">
+    <div :class="['p-4 p-md-5 gap-3', props.customClassWrapperText]">
       <h2 :class="['fw-bold text-white mb-4', props.customClassTitle]">
         {{ props.title }}
       </h2>
       <div :class="['text-muted lh-lg', props.customClassDescription]">
-        <p class="text">{{ props.description }}</p>
+        <p v-html="props.description" class="text"></p>
       </div>
       <div v-for="(item) in props.professionalProfile" :key="item.id" class="d-flex flex-column ">
         <h4 :class="['fw-bold text-white mb-4', props.customClassTitleHeading]">
@@ -53,7 +53,4 @@ const props = defineProps(dynamicPagePropTypes)
   font-size: 1.1rem;
 }
 
-.text{
-  color: #d3d3d3;
-}
 </style>

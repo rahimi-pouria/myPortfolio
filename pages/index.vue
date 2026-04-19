@@ -1,9 +1,9 @@
 <template>
-  <div class="container pt-8 d-flex w-100 position-relative">
-      <div class="d-flex w-25">
+  <div class="container pt-8 d-flex w-100  responsive-mobile-design">
+      <div class="d-flex responsive-column-profile">
         <profile />
       </div>
-      <div class="d-flex content flex-column w-75">
+      <div class="d-flex content flex-column responsive-column-header-content">
         <headerContent />
       </div>
   </div>
@@ -40,4 +40,11 @@ onMounted(() => {
   gap: 3rem;
 }
 
+.responsive-column-profile{
+  width: 25%;
+}
+
+.responsive-column-header-content{
+  width: 75%;
+}
 </style>

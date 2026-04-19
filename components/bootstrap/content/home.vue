@@ -31,12 +31,14 @@
             :id="`card-${item.id}`"
             :title="item.title"
             img-left
-            class-card="w-50 about-us-card-new"
+            class-card="about-us-card-new"
             custom-class-text="description-text"
             :description-card="item.description"
             :show-btn="true"
             label-btn="read more"
-            btn-class="custom-btn-core-soft-skills"
+            btn-class="custom-btn-core-soft-skills text-black"
+            :anchor-link="item.link"
+            @click="props.func"
         />
       </div>
     </div>
@@ -47,7 +49,10 @@
 <script setup lang="ts">
   import {ref, onMounted} from 'vue'
   import CustomCard from "~/components/bootstrap/customCard.vue";
-
+  import { homeType } from "~/props/bootstrap/home"
+  const props = defineProps({
+    ...homeType
+  })
   const show = ref(false)
   const slideText = () => {
     setInterval(() => {
@@ -60,6 +65,7 @@
     title: string,
     icon: string,
     description: string,
+    link: string
   }
 
   const coreSoftSkills: coreSoftSkillsType[]= [
@@ -69,6 +75,7 @@
         icon: '',
         description: 'Concise Explanation: Fostering collaboration and knowledge transfer between technical and non-technical teams; bridging gaps and ensuring alignment towards common goals within Agile environments.\n' +
             'Key Takeaway: Ability to connect different departments and align everyone',
+      link: '/#explanation'
     },
     {
       id: 2,
@@ -76,6 +83,7 @@
       icon: '',
       description: 'Concise Explanation: Quickly adapting to diverse work environments and methodologies; actively contributing in Agile settings for optimal group outcomes.\n' +
           'Key Takeaway: Demonstrates understanding of modern workplaces and rapid team integration.',
+      link: '/#explanation'
     },
     {
       id: 3,
@@ -83,6 +91,7 @@
       icon: '',
       description: 'Concise Explanation: Analyzing complex technical challenges and designing practical, scalable, efficient solutions considering performance, security, and maintainability.\n' +
           'Key Takeaway: Highlights a thoughtful, engineering-focused approach to solutions with long-term implications.',
+      link: '/#explanation'
     },
     {
       id: 4,
@@ -90,6 +99,7 @@
       icon: '',
       description: 'Concise Explanation: Driving the product lifecycle from concept to launch, encompassing requirements definition, implementation, testing, and ensuring successful product delivery.\n' +
           'Key Takeaway: Shows mastery of the entire development and delivery process.',
+      link: '/#explanation'
     }
   ]
 

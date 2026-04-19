@@ -36,5 +36,9 @@ export const customCardProps = {
     enableHoverAnimation: { type: Boolean as PropType<boolean>, default: false },
     hoverBorderColor: { type: String as PropType<string>, default: '#4a9eff' },
     hoverBorderWidth: { type: String as PropType<string>, default: '2px' },
-    hoverTransitionDuration: { type: String as PropType<string>, default: '0.3s' }
+    hoverTransitionDuration: { type: String as PropType<string>, default: '0.3s' },
+    anchorLink: {type: String as PropType<string>, required: false, default: null },
+    externalLink :{type: String as PropType<string>, required: false, default: null },
+    customClassLink: {type: String as PropType<string>, required: false,  default: ''},
+    customClassExternalLink: {type: String as PropType<string>, required: false,  default: ''},
 };

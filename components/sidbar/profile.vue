@@ -1,6 +1,6 @@
 <template>
   <CustomCard id="product-card" title="" sub-title="full stack developer" img-src="/img/pouria.png" img-width="50"
-      img-height="280" img-top class-card="shadow rounded custom-card position-fixed" description-card="software engineer"
+      img-height="280" img-top class-card="shadow rounded custom-card myProfile" description-card="software engineer"
       :show-btn="true" btn-class="btn btn-warning w-100" label-btn="" label=""  img-alt="" link-btn=""
               type-btn="button">
     <template #customBody>
@@ -24,8 +24,9 @@
 
           </span>
         </div>
+
         <div class="d-flex justify-content-center align-items-center mt-2">
-          <custom-button label="Download Cv" class="btn btn-warning w-100" link-btn=""/>
+          <custom-button :href="locationFile" label="Download Cv" class="btn text-black btn-warning w-100" link-btn="" download="pouriarahimy.pdf" />
         </div>
       </div>
     </template>
@@ -36,6 +37,7 @@
 
 import CustomCard from "~/components/bootstrap/customCard.vue";
 import CustomButton from "~/components/bootstrap/customButton.vue";
+import locationFile from "~/assets/pdf/pouriaRahimy.pdf"
 
 interface  socialMediaType {
   id: number;
@@ -67,9 +69,10 @@ const socialMedia: socialMediaType[] = [
   }
 ]
 
-
-
 </script>
 
 <style scoped lang="scss">
+  .myProfile{
+    position: fixed;
+  }
 </style>

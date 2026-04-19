@@ -1,0 +1,85 @@
+@media (min-width: 360px) and (max-width: 767px) {
+    .responsive-mobile-design{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .responsive-column-profile{
+        width: 100% !important;
+    }
+    .about-us-card-new {
+        width: 100% !important;
+    }
+    .responsive-column-header-content{
+        width: 100% !important;
+    }
+    div#product-card {
+        width: 100% !important;
+    }
+    .myProfile{
+        position: static !important;
+    }
+    /* home slider text*/
+    .slide-wrapper{
+        display: block !important;
+    }
+    /* skills responsive */
+    .show-skills{
+        width: 40%;
+    }
+/*    demo project */
+    .video-wrapper {
+        max-width: 100% !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .responsive-mobile-design{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .responsive-column-profile{
+        width: 100% !important;
+    }
+    img.b-img.card-img-top {
+        padding: 25px !important;
+        border-radius: 35px !important;
+        height: 52%;
+    }
+    .about-us-card-new {
+        width: 100% !important;
+    }
+    .responsive-column-header-content{
+        width: 100% !important;
+    }
+    div#product-card {
+        width: 100% !important;
+    }
+    .myProfile{
+        position: static !important;
+    }
+    /* home slider text*/
+    .slide-wrapper{
+        display: block !important;
+    }
+    /* skills responsive */
+    .show-skills {
+        width: 32%;
+    }
+    /*    demo project */
+    .video-wrapper {
+        max-width: 100% !important;
+    }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .responsive-mobile-design{
+        position: relative;
+    }
+}

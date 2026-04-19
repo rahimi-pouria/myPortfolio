@@ -10,7 +10,7 @@
             :title="item.title"
             :sub-title="item.subTitle"
             img-left
-            class-card="w-50 about-us-card-new anime-card"
+            class-card="about-us-card-new anime-card"
             custom-class-text="description-text"
             :description-card="item.description"
             :show-btn="false"

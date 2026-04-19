@@ -3,21 +3,26 @@
       <div class="d-flex">
         <h2> My Project</h2>
       </div>
-      <div class="d-flex flex-wrap gap-4 w-100">
+      <div class="d-flex flex-wrap my-project gap-4 w-100">
         <CustomCard
             v-for="(item) in project" :key="item.id"
             :id="`card-${item.id}`"
             :title="item.title"
             img-left
-            class-card="w-50 about-us-card-new anime-card"
+            class-card="about-us-card-new anime-card"
             custom-class-text="description-text"
             :description-card="item.description"
             :show-btn="true"
-            label-btn="read more"
-            btn-class="custom-btn-core-soft-skills"
+            label-btn="see project in github"
+            btn-class="custom-btn-core-soft-skills text-black"
             img-top
             :img-src="item.img"
-
+            :link-btn="item.linkGitHub"
+            :external-link="item.linkWebsite"
+            custom-Class-External-Link="btn btn-md btn- custom-btn-core-soft-skills text-black"
+            custom-class-link="d-flex justify-content-between align-items-center"
+            title-custom-link="see webSite"
+            anchorLink=""
         />
       </div>
     </div>
@@ -40,7 +45,10 @@ interface projectType {
   location: string,
   position: string
   typeProject: string
-  img: string
+  img: string,
+  linkWebsite: string,
+  linkGitHub: string,
+  linkPackageManager: string,
 }
 
 const project  = ref<projectType[]>([
@@ -54,7 +62,10 @@ const project  = ref<projectType[]>([
     location: "Tehran",
     position: "Frontend Developer | Vesta Information Technology",
     typeProject: 'personal project',
-    img: crossUi
+    img: crossUi,
+    linkWebsite: 'https://cross-ui.ir/',
+    linkGitHub: 'https://github.com/rahimi-pouria/crossui',
+    linkPackageManager: 'https://www.npmjs.com/package/crossui-cli'
   },
   {
     id: 2,
@@ -63,7 +74,10 @@ const project  = ref<projectType[]>([
     location: "Tehran",
     position: "Frontend Developer | Vesta Information Technology",
     typeProject: 'personal project',
-    img: formBuilder
+    img: formBuilder,
+    linkWebsite: 'http://builder-form.ir/',
+    linkGitHub: 'https://github.com/rahimi-pouria/formBuilder',
+    linkPackageManager: ''
   },
   {
     id: 3,
@@ -73,7 +87,10 @@ const project  = ref<projectType[]>([
     location: "Tehran",
     position: "Frontend Developer | Vesta Information Technology",
     typeProject: 'company vesta',
-    img: panel
+    img: panel,
+    linkWebsite: 'https://nima.viannacloud.ir/lms/dashboard',
+    linkGitHub: '',
+    linkPackageManager: ''
   },
   {
     id: 4,
@@ -83,7 +100,10 @@ const project  = ref<projectType[]>([
     location: "Tehran",
     position: "Frontend Developer | Vesta Information Technology",
     typeProject: 'personal project',
-    img: squidGame
+    img: squidGame,
+    linkWebsite: '',
+    linkGitHub: 'https://github.com/rahimi-pouria/ExtentionChroomFromReact',
+    linkPackageManager: ''
   },
   {
     id: 5,
@@ -93,7 +113,10 @@ const project  = ref<projectType[]>([
     location: "Tehran",
     position: "Frontend Developer | Vesta Information Technology",
     typeProject: 'personal project',
-    img: squidGame
+    img: squidGame,
+    linkWebsite: '',
+    linkGitHub: 'https://github.com/rahimi-pouria/squid-game-With-react-js/tree/main',
+    linkPackageManager: ''
   },
   {
     id: 6,
@@ -103,7 +126,10 @@ const project  = ref<projectType[]>([
     location: "Tehran",
     position: "Frontend Developer | Vesta Information Technology",
     typeProject: 'personal project',
-    img: puzzelGame
+    img: puzzelGame,
+    linkWebsite: '',
+    linkGitHub: 'https://github.com/rahimi-pouria/puzzel-game-with-rect',
+    linkPackageManager: ''
   },
 ])
 

@@ -12,10 +12,14 @@
       <slot v-if="$slots.customBody" name="customBody" />
       <div v-else class="d-flex flex-column gap-4">
         <b-card-text :class="customClassText">{{ descriptionCard }}</b-card-text>
-        <div>
-          <router-link :to="customCardLink" target="_blank">{{ titleCustomLink }}</router-link>
+        <div :class="customClassLink">
+          <a v-if="props.externalLink" :class="props.customClassExternalLink" :href="props.externalLink">{{ titleCustomLink }}</a>
+          <router-link v-else-if="customCardLink !== ''" :to="customCardLink" target="_blank">{{ titleCustomLink }}</router-link>
           <template v-if="showBtn">
-            <custom-button :id="idBtn" :href="linkBtn" :btn-class="btnClass" :variant-btn="variantBtn" :label="labelBtn" @click="emit('click')" :type-button="typeButton"/>
+            <custom-button :id="idBtn"
+                           :href="anchorLink || linkBtn || ''"
+                           :btn-class="btnClass" :variant-btn="variantBtn" :label="labelBtn"
+                           @click="emit('click')" :type-button="typeButton"/>
           </template>
         </div>
       </div>

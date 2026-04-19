@@ -14,11 +14,11 @@ type HydrationStrategies = {
 type LazyComponent<T> = (T & DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }>)
 
 
-export const BootstrapContentAboutUs: typeof import("../components/bootstrap/content/aboutUs.vue")['default']
+export const BootstrapContentAboutMe: typeof import("../components/bootstrap/content/aboutMe.vue")['default']
 export const BootstrapContentAchievements: typeof import("../components/bootstrap/content/achievements.vue")['default']
 export const BootstrapContentDemos: typeof import("../components/bootstrap/content/demos.vue")['default']
-export const BootstrapContentGeneric: typeof import("../components/bootstrap/content/generic.vue")['default']
 export const BootstrapContentHeaderContent: typeof import("../components/bootstrap/content/headerContent.vue")['default']
+export const BootstrapContentHome: typeof import("../components/bootstrap/content/home.vue")['default']
 export const BootstrapContentMyProject: typeof import("../components/bootstrap/content/myProject.vue")['default']
 export const BootstrapContentMyWorkExperience: typeof import("../components/bootstrap/content/myWorkExperience.vue")['default']
 export const BootstrapContentSkills: typeof import("../components/bootstrap/content/skills.vue")['default']
@@ -183,11 +183,11 @@ export const Html: typeof import("../node_modules/.pnpm/nuxt@3.19.2_@parcel+watc
 export const Body: typeof import("../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: typeof import("../node_modules/.pnpm/nuxt@3.19.2_@parcel+watcher_7e51f20dbf562e6d1f316a0b26e2633b/node_modules/nuxt/dist/app/components/server-placeholder")['default']
-export const LazyBootstrapContentAboutUs: LazyComponent<typeof import("../components/bootstrap/content/aboutUs.vue")['default']>
+export const LazyBootstrapContentAboutMe: LazyComponent<typeof import("../components/bootstrap/content/aboutMe.vue")['default']>
 export const LazyBootstrapContentAchievements: LazyComponent<typeof import("../components/bootstrap/content/achievements.vue")['default']>
 export const LazyBootstrapContentDemos: LazyComponent<typeof import("../components/bootstrap/content/demos.vue")['default']>
-export const LazyBootstrapContentGeneric: LazyComponent<typeof import("../components/bootstrap/content/generic.vue")['default']>
 export const LazyBootstrapContentHeaderContent: LazyComponent<typeof import("../components/bootstrap/content/headerContent.vue")['default']>
+export const LazyBootstrapContentHome: LazyComponent<typeof import("../components/bootstrap/content/home.vue")['default']>
 export const LazyBootstrapContentMyProject: LazyComponent<typeof import("../components/bootstrap/content/myProject.vue")['default']>
 export const LazyBootstrapContentMyWorkExperience: LazyComponent<typeof import("../components/bootstrap/content/myWorkExperience.vue")['default']>
 export const LazyBootstrapContentSkills: LazyComponent<typeof import("../components/bootstrap/content/skills.vue")['default']>
