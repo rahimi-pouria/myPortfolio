@@ -15,7 +15,7 @@
     "@nuxt/image": "^1.0.0-rc.1",
     "@types/node": "^18",
     "@types/vuelidate": "^0.7.22",
-    "axios": "^1.12.2",
+    "axios": "^1.13.5",
     "bootstrap": "^5.3.8",
     "bootstrap-vue-next": "^0.40.9",
     "eslint": "^9.35.0",
